@@ -1,0 +1,5 @@
+Bundle-Name: Test-view-web
+Bundle-SymbolicName: jp.co.newlifesoft.test.view.web
+Bundle-Version: 1.0.0
+Export-Package: jp.co.newlifesoft.test.view.web.constants
+Web-ContextPath: /Test-view-web

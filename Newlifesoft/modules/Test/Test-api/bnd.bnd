@@ -1,0 +1,10 @@
+Bundle-Name: Test-api
+Bundle-SymbolicName: jp.co.newlifesoft.test.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	jp.co.newlifesoft.test.exception,\
+	jp.co.newlifesoft.test.model,\
+	jp.co.newlifesoft.test.service,\
+	jp.co.newlifesoft.test.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../Test-service/service.xml

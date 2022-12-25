@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="jp.co.newlifesoft.test.model.Student">
+		<field name="studentId" type="long" />
+		<field name="studentName" type="String" />
+	</model>
+</model-hints>
