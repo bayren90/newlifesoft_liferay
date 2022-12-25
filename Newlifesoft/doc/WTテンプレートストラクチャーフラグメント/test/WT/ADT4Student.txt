@@ -1,0 +1,3 @@
+<#assign studentLocalService = serviceLocator.findService("jp.co.newlifesoft.test.service.StudentLocalService") />
+
+<h1>Freemarker: ${studentLocalService.getStudent(1).getStudentName()}</h1>
