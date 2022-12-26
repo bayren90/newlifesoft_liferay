@@ -1,0 +1,54 @@
+<div class="wrap">
+	<div class="service">
+        <h6>Salesforceの導入、カスタマイズのプロジェクトに担当実績がありお客様の基幹システムや他クラウドとのデータ連携、統合など、価値をさらに高めるためのノウハウを保持しております。 </h6><br><br>
+        <#list entries as entry>
+			<#assign ddmFormFieldValues = entry.getAssetRenderer().getDDMFormValuesReader().getDDMFormValues().getDDMFormFieldValues() />
+			<h6>${entry_index+1}&nbsp;.&nbsp;${entry.getTitle(locale)}</h6><br>
+		    <#list ddmFormFieldValues as ddmFormFieldValue>
+		        <#if ddmFormFieldValue.getName() == 'Text16131915'>
+				    <#list ddmFormFieldValue.getValue().getString(locale)?split("\n") as work>
+						<div class="ctn">
+							・${work}
+						</div>
+					</#list>
+				</#if>
+			</#list>
+		</#list>      
+    </div>
+</div>
+
+<style>
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, output textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1200px;
+    margin: 0 50px;
+    padding-bottom: 50px;
+}
+.service {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.service h6 {
+    text-align: left;
+}
+.service h6 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    padding: 10px 0;
+}
+.service .ctn {
+    text-align: left;
+}
+.service .ctn {
+    width: 100%;
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 175%;
+}
+</style>

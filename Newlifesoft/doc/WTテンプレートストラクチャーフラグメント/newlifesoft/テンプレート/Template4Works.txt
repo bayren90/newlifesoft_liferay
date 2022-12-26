@@ -1,0 +1,5 @@
+<h6>${htmlUtil.escape(.vars['reserved-article-title'].data)}</h6>
+<#assign workList = Text16131915.getData()?split("\n") />
+<#list workList as work>
+    <div class="ctn">・${work}</div><br>
+</#list>
